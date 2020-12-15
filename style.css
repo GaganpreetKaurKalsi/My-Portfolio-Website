@@ -90,7 +90,7 @@ hr{
 }
 
 .hero{
-    padding : 6rem;
+    padding : 5rem;
     padding-bottom : 2rem;
 }
 
@@ -162,6 +162,7 @@ footer{
 
 .section-project{
     background-color: rgb(250, 249, 249);
+    padding :5px 2rem;
 }
 
 .subheading{
