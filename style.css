@@ -258,11 +258,15 @@ ol{
     margin-top:0;
 }
 
+@media (max-width: 600px){
+    .learnings-header .head {
         padding: 150px 50px;
     }
     .nav-pills {
         padding : 0;
     }
+    .link {
+        padding: 0.5rem 0rem;
     }
 }
 
