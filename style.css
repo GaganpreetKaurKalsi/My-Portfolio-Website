@@ -257,5 +257,13 @@ ol{
     font-size : 15px;
     margin-top:0;
 }
+@media (max-width: 600px){
+    .learnings-header .head {
+        padding: 150px 50px;
+    }
+    .nav-pills {
+        padding : 0;
+    }
+}
 
 
