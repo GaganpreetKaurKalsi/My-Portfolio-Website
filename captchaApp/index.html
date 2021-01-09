@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="head">
+        <h1 class="main-heading">Captcha Checker ✔️ ❌</h1>
+    </header>
+
+    <div class="about-div">
+        <img class = "img" src="samples/accessdenied.svg" alt=""/>
+        <section class="about-app">
+            <h2 class="about">About</h2>
+            <p class="desc">This app is made using firebase. Client can change the captchas. The correct code of each captcha is stored in realtime database provided by firebase. The captcha code is retrieved from the database and is compared to the user input, then the result is displayed whether the user was correct or not.</p>
+        </section>
+    </div>
+    
+
+
+    <form class="captcha" onsubmit="check(event)">
+        <h1 class="center heading">Captcha</h1>
+        <img src="samples/2b827.png" alt="" srcset="" class="center image" id = "image">
+        <a onclick="change()" class="link center">Click to change image</a>
+        <input type="text" placeholder="Enter characters in image" class="center field" name="captchaInput" id = "captchaInput">
+        <button type = "submit" class="button submit" id="submit">Submit</button>
+        <div id="result"></div>
+    </form>
+
+    <footer class = "footer">
+        <div class = "footer-header">social media presence</div>
+        <ul class="social-links list">
+            <li class = "list-item-inline"><a href="https://github.com/GaganpreetKaurKalsi" class = "link-footer"><i class="fab fa-github"></i></a></li>
+            <li class = "list-item-inline"><a href="https://www.linkedin.com/in/gaganpreet-kaur-kalsi-2a6650191/" class = "link-footer"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class = "list-item-inline"><a href="https://www.instagram.com/gagan_singhkalsi11/" class = "link-footer"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
