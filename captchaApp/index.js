@@ -1,43 +1,21 @@
+// The variable firebaseConfig contains confidential info.
+// Enter your own info to get the app running
+
 var firebaseConfig = {
-    apiKey: "AIzaSyDqcOp_TJja8h_Os72pMOuKYIZZJLXOx3U",
-    authDomain: "captcha-a351a.firebaseapp.com",
-    projectId: "captcha-a351a",
-    storageBucket: "captcha-a351a.appspot.com",
-    messagingSenderId: "202365184296",
-    appId: "1:202365184296:web:16b86d7b0b25b26a4b481d"
+    apiKey: "***********************************",
+    authDomain: "***********************************",
+    projectId: "****************",
+    storageBucket: "**********************************",
+    messagingSenderId: "*************************",
+    appId: "*******************************"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
-
-
-// const filename, userInput;
 
 function ready(){
     filename = document.getElementById("image").getAttribute("src");
     userInput = document.getElementById("captchaInput").value;
 }
-
-// function check(event){
-//     console.log("Entered");
-//     event.preventDefault();
-// }
-
-// function insert(filename, captcha){
-//     firebase.database().ref('captchas/'+filename).set(
-//         {
-//             captcha : captcha
-//         }
-//     );
-// }
-
-// insert("samples/2b827", "2b827");
-
-// function retrieveData(){
-//     firebase.database().ref('captchas/'+filename).on('value', function(snapshot){
-//         var captchaValue = snapshot.val().captcha;
-//     })
-// }
 
 var captchas = [
     {
@@ -122,14 +100,3 @@ function insert(index, captcha){
         captcha : captcha
     });
 }
-// insert(0,"2b827");
-// insert(1,"2bg48");
-// insert(2,"2cegf");
-// insert(3,"2cg58");
-// insert(4,"2cgyx");
-
-// insert(5,"2en7g");
-// insert(6,"2enf4");
-// insert(7,"2fxgd");
-// insert(8,"2g7nm");
-// insert(9,"2g783");
