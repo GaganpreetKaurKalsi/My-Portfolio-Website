@@ -273,7 +273,7 @@ ol{
     .nav-pills {
         padding : 0;
     }
-    .link {
+    .nav-pills .link {
         padding: 0.5rem 0rem;
     }
 }
