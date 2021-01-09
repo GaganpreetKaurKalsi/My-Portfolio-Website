@@ -4,7 +4,7 @@
     --gray : #D1D5DB;
 }
 body{
-    font-family: 'Kufam', cursive;
+    font-family: 'Work Sans', sans-serif;
     box-sizing : border-box;
     margin :0;
 }
@@ -30,7 +30,8 @@ body{
     border : 1px solid black;
     display: block;
     margin : 10px auto;
-    width : 70%;
+    width : 75%;
+    box-sizing : border-box;
 }
 
 .submit{
@@ -39,10 +40,8 @@ body{
     width : 75%;
     font-size:18px;
     font-weight: 500;
+    padding : 0;
 }
-
-
-
 
 
 
@@ -210,5 +209,13 @@ footer{
         display : block;
         position :unset;
         height : unset;
+    }
+    .captcha{
+        width : 80%;
+        max-width : 400px;
+    }
+    .head .main-heading{
+        font-size:25px;
+        padding-left : 20px;
     }
 }
