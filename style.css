@@ -258,4 +258,12 @@ ol{
     margin-top:0;
 }
 
+        padding: 150px 50px;
+    }
+    .nav-pills {
+        padding : 0;
+    }
+    }
+}
+
 
