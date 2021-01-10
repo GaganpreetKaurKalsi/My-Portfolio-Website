@@ -214,18 +214,19 @@ ol{
 }
 
 .card{
-    width : 25%;
+    width : 90vw;
+    max-width : 600px;
+    margin:auto;
     list-style: none;
-    background-color: rgb(245, 245, 245);
     padding : 20px;
-    box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.753), 0 6px 20px 0 rgba(134, 134, 134, 0.63);
-    border-radius: 0.5rem;
-    /* font-family: 'Kufam', cursive; */
 }
 
 .card-container{
-    background: #262626;
-    padding : 20px;
+    /* padding : 20px; */
+    margin-top : 40px;
+}
+.card-container ul{
+    padding : 0;
 }
 .explanation{
     text-align: center;
@@ -239,10 +240,10 @@ ol{
 }
 
 .card .title{
-    color :var(--primary-color);
+    color :black;
     margin-top : 5px;
     margin-bottom : 8px;
-    text-shadow: 2px 2px #005841;
+    /* text-shadow: 2px 2px 3px; */
 }
 .card .date{
     color : rgb(226, 120, 0);
