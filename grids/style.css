@@ -250,3 +250,57 @@ footer{
     display: inline;
     padding: 0rem 1rem;
 }
+
+.info{
+    padding : 40px;
+    border : 2px solid #D4D4D4;
+    max-width : 600px;
+    width : 95%;
+    margin : auto;
+    margin-top : 50px;
+    font-size : 20px;
+    background-color: #E5E5E5;
+    color : #262626;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.info .btn{
+    padding : 8px 25px;
+    margin : 20px 10px;
+    margin-bottom : 5px;
+    /* border-radius: 50px; */
+    background-color: rgba(0, 0, 0, 0.822);
+    color : white;
+    border : none;
+    border : 2px solid #EAB308;
+    cursor: pointer;
+    
+}
+.info .btn:hover{
+    background-color: rgba(0, 0, 0, 0.931);
+}
+.info .btn a{
+    text-decoration: none;
+    font-size : 15px;
+    color : white;
+    color:#EAB308;
+    font-weight : bold;
+}
+.info p span{
+    font-weight: bold;
+    color : #CA8A04;
+}
+.title-head{
+    max-width : 600px;
+    width : 95%;
+    margin : auto;
+    margin-top : 100px;
+    margin-bottom : 30px;
+    text-align : left;
+    padding : 0 30px;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #6c8fe0 50%, #6c8fe0 56%, #ffffff 56%, #ffffff 100%);
+}
+.title-head span{
+    background-color: white;
+    padding : 10px; 
+}
