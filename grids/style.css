@@ -304,3 +304,12 @@ footer{
     background-color: white;
     padding : 10px; 
 }
+
+@media only screen  and (max-width:480px){
+    .info .btn{
+        display : block;
+        max-width : 150px;
+        width : 95%;
+        margin : 10px auto;
+    }
+}
