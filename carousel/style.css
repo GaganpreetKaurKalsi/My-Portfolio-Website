@@ -1,0 +1,134 @@
+*{
+    padding : 0;
+    margin : 0;
+    transition: left 1s ease-in-out,right 1s ease-in-out;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+/* To apply a overlayed background image */
+/* .background{
+    background-image: url('./images/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(25px);
+    -webkit-filter: blur(25px);
+    z-index: 0;
+    height: 100%;
+    position : absolute;
+    width :100%;
+    top : 0;
+}
+.black-back{
+    z-index : 1;
+    background-color: rgba(0, 0, 0, 0.637);
+    position:absolute;
+    height : 100%;
+    width : 100%;
+} */
+/* ---------------------------------------------- */
+.caroussel, .caroussel-container{
+    display : flex;
+    vertical-align: middle;
+    width : 333.33px;
+    height : 500px;
+    margin : auto;
+    z-index : 2;
+}
+.caroussel-container{
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    /* top: 50%; */
+    /* -ms-transform: translateY(15%);
+    transform: translateY(15%); */
+    margin : 3rem auto;
+}
+.caroussel{
+    width : 100%;
+    position: absolute;
+    left : 0;
+}
+.image{
+    display : inline-flex;
+    flex-direction: column;
+    margin : auto;
+    position: relative;
+}
+.image img{
+    height : 500px;
+    width : auto;
+}
+.navigate{
+    position : absolute;
+    height : 500px;
+    width : 50px;
+    z-index: 3;
+    /* background-color: rgba(87, 87, 87, 0.233); */
+    border : none;
+    outline : none;
+    color : rgba(255, 255, 255, 0.87);
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor : pointer;
+}
+.navigate:hover{
+    color : rgb(255, 255, 255);
+    transition : background-color 1s ease-in-out;
+}
+.nav-left{
+    left : 0;
+    animation-name: move-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.nav-right{
+    right : 0;
+    animation-name: move-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.caroussel-container{
+    position: relative;
+}
+
+@keyframes move-left{
+    0%   {left: 0px;}
+    50%  {left: 10px}
+    100% {left: 0px}
+}
+@keyframes move-right{
+    0%   {right: 0px;}
+    50%  {right: 10px}
+    100% {right: 0px}
+}
+
+.round-btn{
+    border-radius: 100%;
+    width : 12px;
+    height : 12px;
+    border : none;
+    outline : none;
+    cursor : pointer;
+    border : 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.round-btn:hover{
+    background-color: white;
+}
+.round-buttons{
+    position : absolute;
+    bottom : 0;
+    text-align : center;
+    justify-content: center;
+    width : 100%;
+    padding : 10px;
+    z-index : 3;
+}
+.one{
+    background-color: white;
+}
