@@ -166,6 +166,7 @@ footer{
 .section-project{
     background-color: rgb(250, 249, 249);
     padding :5px 2rem;
+    padding-left: 40px;
 }
 
 .subheading{
@@ -279,4 +280,18 @@ ol{
     }
 }
 
-
+.badge{
+    font-size: 13px;
+    background-color: #0EA5E9;
+    border-radius: 20px;
+    color : white;
+    padding: 5px 12px;
+    margin-left: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+li h2{
+    display: flex;
+}
