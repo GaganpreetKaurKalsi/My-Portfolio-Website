@@ -295,3 +295,17 @@ ol{
 li h2{
     display: flex;
 }
+.linkedin{
+    font-size: 30px;
+    text-align: center;
+}
+.linkedin i{
+    color: #0EA5E9;
+} 
+.linkedin a{
+    border: 3px solid #0EA5E9;
+    border-radius: 10px;
+    padding: 5px 15px;
+    /* background-color: #f6fbff; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
